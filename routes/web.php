@@ -22,7 +22,7 @@ Route::get('/mahasiswa/{kelas?}', 'MahasiswaController@index');
 // Route::get('/mahasiswa/6C', 'MahasiswaController@kelasC');
 // Route::get('/mahasiswa/6D', 'MahasiswaController@kelasD');
 
-Route::get('/mahasiswa/tambah','MahasiswaController@tambah');
+Route::get('/tambah','MahasiswaController@tambah');
 Route::post('/mahasiswa/store','MahasiswaController@store');
 Route::get('/mahasiswa/edit/{nim}','MahasiswaController@edit');
 Route::post('/mahasiswa/update','MahasiswaController@update');

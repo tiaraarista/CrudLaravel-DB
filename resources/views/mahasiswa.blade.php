@@ -58,7 +58,7 @@
                     
                 </div>
                         <div class="form-group">
-                            <a href="/mahasiswa/tambah" class="btn btn-dark "> + Tambah Mahasiswa Baru</a>
+                            <a href="/tambah" class="btn btn-dark "> + Tambah Mahasiswa Baru</a>
                         </div>
             </div>
         </div>
