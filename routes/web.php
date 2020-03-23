@@ -26,7 +26,10 @@ Route::get('/tambah','MahasiswaController@tambah');
 Route::post('/mahasiswa/store','MahasiswaController@store');
 Route::get('/mahasiswa/edit/{nim}','MahasiswaController@edit');
 Route::post('/mahasiswa/update','MahasiswaController@update');
+Route::get('/mahasiswa/detail/{nim}','MahasiswaController@show');
 Route::get('/mahasiswa/hapus/{nim}','MahasiswaController@hapus');
+
+Route::resource('ajax-posts', 'ajaxController');
 
 Route::get('check_db', function () {
     try {

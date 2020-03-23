@@ -64,6 +64,12 @@ class MahasiswaController extends Controller
          return redirect('/mahasiswa');
    
       }
+
+      public function show(Mahasiswa $nim)
+    {
+        $mahasiswa = Mahasiswa::findOrFail($nim);
+        return view('detail', compact('mahasiswa'));
+    }
    
       // method untuk edit data mahasiswa
       public function edit($nim)
